@@ -1,0 +1,390 @@
+# ============================================================================
+# ML101 .gitignore Template
+# ============================================================================
+# This template covers Python ML tools, data science workflows, and common
+# development scenarios for machine learning projects
+
+# ============================================================================
+# PYTHON & PACKAGE MANAGEMENT
+# ============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+env.bak/
+venv.bak/
+
+# Poetry
+poetry.lock
+
+# Pipenv
+Pipfile.lock
+
+# ============================================================================
+# JUPYTER & NOTEBOOKS
+# ============================================================================
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Notebook checkpoints
+.jupyter/
+
+# ============================================================================
+# IDEs & EDITORS
+# ============================================================================
+
+# VSCode
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+.vim/
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+*~
+.*.swp
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Other editors
+.DS_Store
+Thumbs.db
+
+# ============================================================================
+# OS FILES
+# ============================================================================
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ============================================================================
+# ML FRAMEWORKS & TOOLS
+# ============================================================================
+
+# PyTorch
+*.pth
+*.pt
+runs/
+lightning_logs/
+wandb/
+.wandb/
+
+# TensorFlow / Keras
+*.h5
+*.hdf5
+*.pb
+*.ckpt
+*.ckpt.*
+checkpoint/
+saved_model/
+tf-logs/
+
+# Hugging Face
+*.safetensors
+huggingface_hub/
+cache/
+.huggingface/
+
+# MLflow
+mlruns/
+.mlflow/
+
+# Weights & Biases
+wandb/
+.wandb/
+
+# Ray Tune
+ray_results/
+
+# XGBoost, LightGBM
+*.model
+*.booster
+
+# ONNX
+*.onnx
+
+# ============================================================================
+# DATA & DATASETS
+# ============================================================================
+
+# Data directories (adjust as needed)
+data/
+datasets/
+raw_data/
+processed_data/
+*.csv
+*.tsv
+*.json
+*.jsonl
+*.parquet
+*.xlsx
+*.xls
+
+# Large files (uncomment specific extensions)
+# *.zip
+# *.tar
+# *.tar.gz
+# *.rar
+# *.7z
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.sqlalchemy
+
+# ============================================================================
+# EXPERIMENT OUTPUTS & LOGS
+# ============================================================================
+
+# Model checkpoints & outputs
+models/
+checkpoints/
+artifacts/
+outputs/
+results/
+experiments/
+logs/
+*.log
+
+# Tensorboard
+runs/
+tensorboard/
+tb_logs/
+
+# Experiment tracking
+mlruns/
+.neptune/
+.comet/
+
+# ============================================================================
+# DOCKER
+# ============================================================================
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# ============================================================================
+# ENVIRONMENT VARIABLES & SECRETS
+# ============================================================================
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.prod
+.env.dev
+*.pem
+*.key
+config.yaml
+config.json
+secrets.json
+credentials.json
+.aws/
+.gcp/
+
+# ============================================================================
+# TEMPORARY & CACHE FILES
+# ============================================================================
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+
+# Python cache
+*.pyc
+.Python
+__pycache__/
+
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Black formatter
+.black_cache/
+
+# Ruff cache
+.ruff_cache/
+
+# Poetry cache
+.poetry-cache
+
+# ============================================================================
+# VSCODE PYTHON EXTENSIONS
+# ============================================================================
+
+.vscode/
+.pylintrc
+.pylintrc.bak
+
+# ============================================================================
+# REMOTE COMPUTING & DISTRIBUTED TRAINING
+# ============================================================================
+
+# Ray
+ray_results/
+.ray/
+
+# Dask
+dask-worker-space/
+
+# ============================================================================
+# GIT & VCS
+# ============================================================================
+
+# Git
+.git/
+.gitignore_local
+.gitattributes
+
+# ============================================================================
+# DOCUMENTATION
+# ============================================================================
+
+# MkDocs
+site/
+docs/_build/
+
+# Sphinx
+docs/_build/
+
+# pdoc
+.pdoc/
+
+# ============================================================================
+# BUILD & DISTRIBUTION
+# ============================================================================
+
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+*.whl
+
+# ============================================================================
+# MISCELLANEOUS
+# ============================================================================
+
+# OS-specific
+.AppleDouble
+.LSOverride
+*.lnk
+
+# Project-specific (customize as needed)
+# .idea_local/
+# private_data/
+# temp_notebooks/
+# old_experiments/
+
+# ============================================================================
+# NOTES FOR CUSTOMIZATION
+# ============================================================================
+# 
+# If your project has specific needs, add entries like:
+#
+# # Project-specific data
+# sensitive_data/
+# confidential/
+#
+# # Specific experiment folders
+# quick_tests/
+# sandbox/
+#
+# # Third-party tools
+# collab_notebooks/
+#
+# # Keep specific files/folders (use ! prefix)
+# !data/sample_data.csv    # Exception: keep this data file
+# !models/pretrained/      # Exception: keep pretrained models
+#
+# ============================================================================
